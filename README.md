@@ -61,19 +61,19 @@ For development, the project can also be run using the VS Code Live Server exten
 
 ### Screenshots
 
-![Screenshot1](Add screenshot 1 here)
+
 
 <img width="1920" height="1080" alt="Screenshot 2026-09-12 044014" src="https://github.com/user-attachments/assets/82ffdf3f-fe9c-43d4-a362-61814ee428ca" />
 
 
 
 
-![Screenshot2](Add screenshot 2 here)
+
 
 <img width="1920" height="1008" alt="Screenshot 2026-09-12 001715" src="https://github.com/user-attachments/assets/c2f23419-d870-4d7f-b14b-3ed02da43bba" />
 
 
-![Screenshot3](Add screenshot 3 here)
+
 <img width="1920" height="1080" alt="Screenshot 2026-09-12 045843" src="https://github.com/user-attachments/assets/5de5ca2f-5f70-470e-95f7-33438f7813dc" />
 
 <img width="1920" height="1080" alt="Screenshot 2026-09-12 045901" src="https://github.com/user-attachments/assets/930a8d9c-f206-4457-9251-54f5770dbe32" />

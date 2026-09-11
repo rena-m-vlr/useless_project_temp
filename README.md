@@ -99,6 +99,7 @@ https://github.com/user-attachments/assets/d8e467a9-38a8-423c-9c91-e954c0da658d
 
 ## Team Contributions
 Rena M: Designed the project concept, developed the GlitchSearch interface, implemented the keyboard mapping, and worked on UI/UX and responsive design.
+
 Fathima Nida TP: Developed the Glitch Typing Game, timer, scoring, game controls, testing, and GitHub deployment.
 
 ---

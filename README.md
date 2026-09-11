@@ -2,96 +2,104 @@
 
 
 
-# [Project Name] 🎯
-
+# GlitchSearch 🎯⌨️
 
 ## Basic Details
-### Team Name: [Name]
 
+### Team Name: Nova
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Rena M - Government Engineering College Kozhikode
+- Member 2: Fathima Nida TP- Government Engineering College Kozhikode
+
 
 ### Project Description
-[2-3 lines about what your project does]
+
+GlitchSearch is a fun web application that simulates a broken keyboard. When users type normally, the system intentionally converts their keys into different characters. It also includes a Glitch Typing Game where users must discover the correct keys to create target words.
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+
+What if your keyboard suddenly starts producing the wrong letters? Instead of fixing this completely unnecessary problem, we decided to make it even more confusing and turn it into a game!
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+
+GlitchSearch intentionally breaks the keyboard using custom key mappings. Users can search with their "broken" input and play a typing game where they race against time to figure out which keys produce the required letters.
 
 ## Technical Details
+
 ### Technologies/Components Used
+
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- HTML5
+- CSS3
+- JavaScript
+- Vanilla JavaScript
+- Google Search
+- VS Code
+- GitHub / GitHub Pages
 
 For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+- No hardware required
 
 ### Implementation
+
 For Software:
+
 # Installation
-[commands]
+
+No installation or external dependencies are required.
+
+Download or clone the repository and open the project in a browser.
 
 # Run
-[commands]
 
-### Project Documentation
-For Software:
+Open `index.html` in a modern web browser.
 
-# Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+For development, the project can also be run using the VS Code Live Server extension.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+## Project Documentation
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+### Screenshots
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Screenshot1](Add screenshot 1 here)
 
-For Hardware:
+<img width="1920" height="1080" alt="Screenshot 2026-09-12 044014" src="https://github.com/user-attachments/assets/82ffdf3f-fe9c-43d4-a362-61814ee428ca" />
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
+![Screenshot2](Add screenshot 2 here)
 
-![Final](Add photo of final product here)
-*Explain the final build*
+<img width="1920" height="1008" alt="Screenshot 2026-09-12 001715" src="https://github.com/user-attachments/assets/c2f23419-d870-4d7f-b14b-3ed02da43bba" />
 
-### Project Demo
+
+![Screenshot3](Add screenshot 3 here)
+<img width="1920" height="1080" alt="Screenshot 2026-09-12 045843" src="https://github.com/user-attachments/assets/5de5ca2f-5f70-470e-95f7-33438f7813dc" />
+
+<img width="1920" height="1080" alt="Screenshot 2026-09-12 045901" src="https://github.com/user-attachments/assets/930a8d9c-f206-4457-9251-54f5770dbe32" />
+
+### Diagrams
+
+
+*Workflow showing physical keyboard input → glitch mapping → transformed output → Google Search / game.*
+
+## Project Demo
+
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
+
+https://github.com/user-attachments/assets/d8e467a9-38a8-423c-9c91-e954c0da658d
+
+
+
+
+*The video demonstrates the GlitchSearch interface, broken keyboard mapping, Google search functionality and the Glitch Typing Game.*
+
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+Rena M: Designed the project concept, developed the GlitchSearch interface, implemented the keyboard mapping, and worked on UI/UX and responsive design.
+Fathima Nida TP: Developed the Glitch Typing Game, timer, scoring, game controls, testing, and GitHub deployment.
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 

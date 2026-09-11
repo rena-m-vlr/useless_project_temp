@@ -1,1 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>GlitchSearch — The Keyboard Can't Be Trusted</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- ==================================================
+         SEARCH INTERFACE
+    =================================================== -->
+
+    <section
+        id="searchInterface"
+        class="page"
+    >
+
+        <header class="header">
+
+            <div class="brand">
+                <span class="brand-icon">⌨</span>
+                <span>GlitchSearch</span>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                KEYBOARD BROKEN
+            </div>
+
+        </header>
+
+
+        <main class="search-main">
+
+            <div class="hero">
+
+                <p class="eyebrow">
+                    EXPERIMENTAL SEARCH ENGINE
+                </p>
+
+                <h1>
+                    Search with a keyboard
+                    <span>you can't trust.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Type normally. We'll decide what
+                    your keyboard actually says.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH BOX -->
+
+            <div class="search-wrapper">
+
+                <div class="search-box">
+
+                    <input
+                        id="searchInput"
+                        type="text"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Type something..."
+                        aria-label="GlitchSearch input"
+                    >
+
+                    <button
+                        id="clearButton"
+                        class="clear-button"
+                        type="button"
+                        aria-label="Clear search"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+                <button
+                    id="searchButton"
+                    class="search-button"
+                    type="button"
+                >
+                    <span>⌕</span>
+                    Search
+                </button>
+
+            </div>
+
+
+            <!-- DAMAGE METER -->
+
+            <section class="damage-card">
+
+                <div class="damage-top">
+
+                    <div>
+
+                        <p class="card-label">
+                            KEYBOARD DAMAGE
+                        </p>
+
+                        <h3 id="damageStatus">
+                            Perfect
+                        </h3>
+
+                    </div>
+
+                    <strong id="damagePercentage">
+                        100%
+                    </strong>
+
+                </div>
+
+
+                <div class="damage-track">
+                    <div
+                        id="damageFill"
+                        class="damage-fill"
+                    ></div>
+                </div>
+
+
+                <div class="damage-labels">
+                    <span>HEALTHY</span>
+                    <span>CRITICAL</span>
+                </div>
+
+            </section>
+
+
+            <!-- PRIVACY -->
+
+            <p class="privacy">
+                🔒 This website does not store your
+                search history.
+            </p>
+
+
+            <!-- GAME BUTTON -->
+
+            <div class="game-launch">
+
+                <p>
+                    Think you understand the glitch?
+                </p>
+
+                <button
+                    id="gameButton"
+                    class="game-launch-button"
+                    type="button"
+                >
+                    <span>⚡</span>
+                    Play Glitch Game
+                </button>
+
+            </div>
+
+        </main>
+
+    </section>
+
+
+
+    <!-- ==================================================
+         GAME INTERFACE
+    =================================================== -->
+
+    <section
+        id="gameInterface"
+        class="page hidden"
+    >
+
+        <header class="header">
+
+            <div class="brand">
+                <span class="brand-icon">⌨</span>
+                <span>GlitchSearch</span>
+            </div>
+
+            <button
+                id="backButton"
+                class="back-button"
+                type="button"
+            >
+                ← Back to Search
+            </button>
+
+        </header>
+
+
+        <main class="game-main">
+
+            <div class="hero game-hero">
+
+                <p class="eyebrow">
+                    GLITCH KEYBOARD CHALLENGE
+                </p>
+
+                <h1>
+                    Can you beat the
+                    <span>broken keyboard?</span>
+                </h1>
+
+                <p class="hero-text">
+                    Your real keyboard is broken.
+                    Figure out which physical keys
+                    create the target word.
+                </p>
+
+            </div>
+
+
+            <!-- GAME STATS -->
+
+            <section class="stats-grid">
+
+                <div class="stat-card">
+
+                    <p>TIME</p>
+
+                    <strong id="timer">
+                        00.00
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <p>SCORE</p>
+
+                    <strong id="score">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <p>WORDS</p>
+
+                    <strong id="wordsCompleted">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="stat-card">
+
+                    <p>MISTAKES</p>
+
+                    <strong id="mistakes">
+                        0
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- GAME CARDS -->
+
+            <section class="challenge-grid">
+
+                <!-- TARGET -->
+
+                <div class="challenge-card target-card">
+
+                    <div class="card-heading">
+
+                        <span>01</span>
+
+                        <p>TARGET WORD</p>
+
+                    </div>
+
+
+                    <div
+                        id="targetWord"
+                        class="target-word"
+                    >
+                        READY?
+                    </div>
+
+
+                    <p class="hint">
+                        Make GlitchSearch produce
+                        this exact word.
+                    </p>
+
+                </div>
+
+
+                <!-- OUTPUT -->
+
+                <div class="challenge-card output-card">
+
+                    <div class="card-heading">
+
+                        <span>02</span>
+
+                        <p>GLITCHSEARCH OUTPUT</p>
+
+                    </div>
+
+
+                    <!--
+                        This is an input field, NOT
+                        an on-screen keyboard.
+
+                        The player uses their REAL
+                        physical keyboard.
+                    -->
+
+                    <input
+                        id="gameInput"
+                        class="game-input"
+                        type="text"
+                        autocomplete="off"
+                        spellcheck="false"
+                        placeholder="Start the game..."
+                        aria-label="Game physical keyboard input"
+                    >
+
+
+                    <div
+                        id="gameOutput"
+                        class="game-output"
+                    >
+                        Nothing yet...
+                    </div>
+
+
+                    <p
+                        id="gameFeedback"
+                        class="game-feedback"
+                    >
+                        Press START to begin
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- GAME INSTRUCTIONS -->
+
+            <section class="instructions-card">
+
+                <div class="instruction-icon">
+                    ?
+                </div>
+
+                <div>
+
+                    <h3>
+                        How to play
+                    </h3>
+
+                    <p>
+                        Don't type the target word directly.
+                        Find the physical keys that make the
+                        broken keyboard produce it.
+                    </p>
+
+                    <p>
+                        Example: if
+                        <strong>G → H</strong>,
+                        press <strong>G</strong>
+                        when the target needs
+                        <strong>H</strong>.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- GAME CONTROLS -->
+
+            <div class="game-controls">
+
+                <button
+                    id="startGameButton"
+                    class="primary-button"
+                    type="button"
+                >
+                    ⚡ START GAME
+                </button>
+
+
+                <button
+                    id="stopGameButton"
+                    class="secondary-button hidden"
+                    type="button"
+                >
+                    ■ STOP GAME
+                </button>
+
+
+                <button
+                    id="restartGameButton"
+                    class="secondary-button hidden"
+                    type="button"
+                >
+                    ↻ RESTART
+                </button>
+
+            </div>
+
+
+            <div
+                id="gameMessage"
+                class="game-message"
+            ></div>
+
+        </main>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
